@@ -21,7 +21,7 @@ class Movie {
     echo "Anno: " . $this->anno . "<br>";
     echo "Regista: " . $this->regista . "<br>";
     echo "Lingua: " . $this->lingua . "<br>";
-    echo "Genere: " . $this->genere . "<br>";
+    echo "Genere: " . $this->genere . "<br>" . "<br>";
     }
 
 }
@@ -39,8 +39,11 @@ class Movie {
 <body>
     <?php
 
-    $test = new Movie('test', 'test', 'test', 'test', 'test');
+    $test = new Movie('Requiem for a Dream', '2000', 'Darren Aronofsky', 'Italiano', 'Drammatico');
     $test->__stampa();
+
+    $test2 = new Movie('Grand Budapest Hotel', '2014', 'Wes Anderson', 'Italiano', 'Commedia');
+    $test2->__stampa();
 
     ?>
 </body>

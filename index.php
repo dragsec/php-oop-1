@@ -1,8 +1,30 @@
 <?php
+    
+class Movie {
+    public $titolo;
+    public $anno;
+    public $regista;
+    public $lingua;
+    public $genere;
 
 
+    function __construct($titolo, $anno, $regista, $lingua, $genere) {
+    $this->titolo = $titolo;
+    $this->anno = $anno;
+    $this->regista = $regista;
+    $this->lingua = $lingua;
+    $this->genere = $genere;
+    }
 
+    function __stampa() {
+    echo "Titolo: " . $this->titolo . "<br>";
+    echo "Anno: " . $this->anno . "<br>";
+    echo "Regista: " . $this->regista . "<br>";
+    echo "Lingua: " . $this->lingua . "<br>";
+    echo "Genere: " . $this->genere . "<br>";
+    }
 
+}
 
 ?>
 
@@ -17,8 +39,8 @@
 <body>
     <?php
 
-
-
+    $test = new Movie('test', 'test', 'test', 'test', 'test');
+    $test->__stampa();
 
     ?>
 </body>

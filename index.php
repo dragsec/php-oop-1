@@ -17,11 +17,11 @@ class Movie {
     }
 
     function __stampa() {
-    echo "Titolo: " . $this->titolo . "<br>";
-    echo "Anno: " . $this->anno . "<br>";
-    echo "Regista: " . $this->regista . "<br>";
-    echo "Lingua: " . $this->lingua . "<br>";
-    echo "Genere: " . $this->genere . "<br>" . "<br>";
+    echo "Titolo: {$this->titolo} <br>
+        Anno: {$this->anno} <br>
+        Regista: {$this->regista} <br>
+        Lingua: {$this->lingua} <br>
+        Genere: {$this->genere} <br> <br>";
     }
 
 }
